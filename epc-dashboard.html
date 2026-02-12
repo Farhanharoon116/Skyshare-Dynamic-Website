@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPC Partner Dashboard - SkyShare Energy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="12" r="8" fill="#FDB813"/>
+                        <path d="M8 20 L16 16 L24 20 L16 24 Z" fill="#0B3D2E"/>
+                    </svg>
+                    <span>SkyShare Energy</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="rooftop-owner.html">List Your Rooftop</a>
+                    <a href="epc-dashboard.html">EPC Partners</a>
+                    <a href="about.html">About</a>
+                    <a href="index.html#contact" class="btn-secondary">Contact</a>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Hero -->
+    <section class="dashboard-hero">
+        <div class="container">
+            <div class="dashboard-header">
+                <div>
+                    <h1 class="dashboard-title">EPC Partner Dashboard</h1>
+                    <p class="dashboard-subtitle">Access verified rooftop solar projects across Pakistan</p>
+                </div>
+                <div class="dashboard-stats-row">
+                    <div class="mini-stat">
+                        <div class="mini-stat-number">127</div>
+                        <div class="mini-stat-label">Active Listings</div>
+                    </div>
+                    <div class="mini-stat">
+                        <div class="mini-stat-number">2.4M</div>
+                        <div class="mini-stat-label">Total sq ft Available</div>
+                    </div>
+                    <div class="mini-stat">
+                        <div class="mini-stat-number">18%</div>
+                        <div class="mini-stat-label">Avg. ROI</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Content -->
+    <section class="dashboard-content">
+        <div class="container">
+            <!-- Filters -->
+            <div class="dashboard-filters">
+                <div class="filter-group">
+                    <label class="filter-label">Location</label>
+                    <select class="filter-select">
+                        <option>All Cities</option>
+                        <option>Karachi</option>
+                        <option>Lahore</option>
+                        <option>Islamabad</option>
+                        <option>Faisalabad</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Property Type</label>
+                    <select class="filter-select">
+                        <option>All Types</option>
+                        <option>Industrial</option>
+                        <option>Commercial Plaza</option>
+                        <option>Shopping Mall</option>
+                        <option>Warehouse</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Min. Size</label>
+                    <select class="filter-select">
+                        <option>Any Size</option>
+                        <option>10,000+ sq ft</option>
+                        <option>20,000+ sq ft</option>
+                        <option>30,000+ sq ft</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Sort By</label>
+                    <select class="filter-select">
+                        <option>Newest First</option>
+                        <option>Largest First</option>
+                        <option>Highest ROI</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-badge">Verified</div>
+                    <div class="project-header">
+                        <h3 class="project-title">Industrial Complex - Korangi</h3>
+                        <div class="project-location">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 2 C5 2 3 4 3 6.5 C3 10 8 14 8 14 C8 14 13 10 13 6.5 C13 4 11 2 8 2 Z" stroke="#0B3D2E" stroke-width="1.5" fill="none"/>
+                                <circle cx="8" cy="6.5" r="1.5" fill="#0B3D2E"/>
+                            </svg>
+                            Korangi Industrial Area, Karachi
+                        </div>
+                    </div>
+                    <div class="project-specs">
+                        <div class="spec-item">
+                            <div class="spec-label">Rooftop Size</div>
+                            <div class="spec-value">25,000 sq ft</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Estimated Capacity</div>
+                            <div class="spec-value">200 kW</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Property Type</div>
+                            <div class="spec-value">Factory</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Estimated ROI</div>
+                            <div class="spec-value highlight">18%</div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Annual Generation:</span>
+                            <span class="detail-value">~320,000 kWh</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Lease Term:</span>
+                            <span class="detail-value">20-25 years</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Investment Range:</span>
+                            <span class="detail-value">PKR 40-50M</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary btn-full">Request Contact</button>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-badge premium">Premium</div>
+                    <div class="project-header">
+                        <h3 class="project-title">Commercial Plaza - Clifton</h3>
+                        <div class="project-location">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 2 C5 2 3 4 3 6.5 C3 10 8 14 8 14 C8 14 13 10 13 6.5 C13 4 11 2 8 2 Z" stroke="#0B3D2E" stroke-width="1.5" fill="none"/>
+                                <circle cx="8" cy="6.5" r="1.5" fill="#0B3D2E"/>
+                            </svg>
+                            Clifton Block 5, Karachi
+                        </div>
+                    </div>
+                    <div class="project-specs">
+                        <div class="spec-item">
+                            <div class="spec-label">Rooftop Size</div>
+                            <div class="spec-value">15,000 sq ft</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Estimated Capacity</div>
+                            <div class="spec-value">120 kW</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Property Type</div>
+                            <div class="spec-value">Commercial Plaza</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Estimated ROI</div>
+                            <div class="spec-value highlight">16%</div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Annual Generation:</span>
+                            <span class="detail-value">~192,000 kWh</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Lease Term:</span>
+                            <span class="detail-value">20-25 years</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Investment Range:</span>
+                            <span class="detail-value">PKR 24-30M</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary btn-full">Request Contact</button>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-badge">Verified</div>
+                    <div class="project-header">
+                        <h3 class="project-title">Residential Complex - Gulshan</h3>
+                        <div class="project-location">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 2 C5 2 3 4 3 6.5 C3 10 8 14 8 14 C8 14 13 10 13 6.5 C13 4 11 2 8 2 Z" stroke="#0B3D2E" stroke-width="1.5" fill="none"/>
+                                <circle cx="8" cy="6.5" r="1.5" fill="#0B3D2E"/>
+                            </svg>
+                            Gulshan-e-Iqbal, Karachi
+                        </div>
+                    </div>
+                    <div class="project-specs">
+                        <div class="spec-item">
+                            <div class="spec-label">Rooftop Size</div>
+                            <div class="spec-value">30,000 sq ft</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Estimated Capacity</div>
+                            <div class="spec-value">250 kW</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Property Type</div>
+                            <div class="spec-value">Housing Society</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Estimated ROI</div>
+                            <div class="spec-value highlight">19%</div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Annual Generation:</span>
+                            <span class="detail-value">~400,000 kWh</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Lease Term:</span>
+                            <span class="detail-value">20-25 years</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Investment Range:</span>
+                            <span class="detail-value">PKR 50-62M</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary btn-full">Request Contact</button>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-badge">Verified</div>
+                    <div class="project-header">
+                        <h3 class="project-title">Warehouse - Port Qasim</h3>
+                        <div class="project-location">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 2 C5 2 3 4 3 6.5 C3 10 8 14 8 14 C8 14 13 10 13 6.5 C13 4 11 2 8 2 Z" stroke="#0B3D2E" stroke-width="1.5" fill="none"/>
+                                <circle cx="8" cy="6.5" r="1.5" fill="#0B3D2E"/>
+                            </svg>
+                            Port Qasim Industrial Zone, Karachi
+                        </div>
+                    </div>
+                    <div class="project-specs">
+                        <div class="spec-item">
+                            <div class="spec-label">Rooftop Size</div>
+                            <div class="spec-value">40,000 sq ft</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Estimated Capacity</div>
+                            <div class="spec-value">320 kW</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Property Type</div>
+                            <div class="spec-value">Warehouse</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Estimated ROI</div>
+                            <div class="spec-value highlight">17%</div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Annual Generation:</span>
+                            <span class="detail-value">~512,000 kWh</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Lease Term:</span>
+                            <span class="detail-value">20-25 years</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Investment Range:</span>
+                            <span class="detail-value">PKR 64-80M</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary btn-full">Request Contact</button>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-badge premium">Premium</div>
+                    <div class="project-header">
+                        <h3 class="project-title">Shopping Mall - DHA</h3>
+                        <div class="project-location">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 2 C5 2 3 4 3 6.5 C3 10 8 14 8 14 C8 14 13 10 13 6.5 C13 4 11 2 8 2 Z" stroke="#0B3D2E" stroke-width="1.5" fill="none"/>
+                                <circle cx="8" cy="6.5" r="1.5" fill="#0B3D2E"/>
+                            </svg>
+                            DHA Phase 6, Karachi
+                        </div>
+                    </div>
+                    <div class="project-specs">
+                        <div class="spec-item">
+                            <div class="spec-label">Rooftop Size</div>
+                            <div class="spec-value">35,000 sq ft</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Estimated Capacity</div>
+                            <div class="spec-value">280 kW</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Property Type</div>
+                            <div class="spec-value">Shopping Mall</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Estimated ROI</div>
+                            <div class="spec-value highlight">20%</div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Annual Generation:</span>
+                            <span class="detail-value">~448,000 kWh</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Lease Term:</span>
+                            <span class="detail-value">20-25 years</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Investment Range:</span>
+                            <span class="detail-value">PKR 56-70M</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary btn-full">Request Contact</button>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-badge">Verified</div>
+                    <div class="project-header">
+                        <h3 class="project-title">Textile Mill - SITE</h3>
+                        <div class="project-location">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 2 C5 2 3 4 3 6.5 C3 10 8 14 8 14 C8 14 13 10 13 6.5 C13 4 11 2 8 2 Z" stroke="#0B3D2E" stroke-width="1.5" fill="none"/>
+                                <circle cx="8" cy="6.5" r="1.5" fill="#0B3D2E"/>
+                            </svg>
+                            SITE Industrial Area, Karachi
+                        </div>
+                    </div>
+                    <div class="project-specs">
+                        <div class="spec-item">
+                            <div class="spec-label">Rooftop Size</div>
+                            <div class="spec-value">50,000 sq ft</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Estimated Capacity</div>
+                            <div class="spec-value">400 kW</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Property Type</div>
+                            <div class="spec-value">Textile Factory</div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-label">Estimated ROI</div>
+                            <div class="spec-value highlight">18%</div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Annual Generation:</span>
+                            <span class="detail-value">~640,000 kWh</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Lease Term:</span>
+                            <span class="detail-value">20-25 years</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Investment Range:</span>
+                            <span class="detail-value">PKR 80-100M</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary btn-full">Request Contact</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Become an EPC Partner</h2>
+                <p class="cta-text">Get exclusive access to verified commercial rooftop projects across Pakistan</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn-primary">Register as EPC Partner</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="12" r="8" fill="#FDB813"/>
+                            <path d="M8 20 L16 16 L24 20 L16 24 Z" fill="white"/>
+                        </svg>
+                        <span>SkyShare Energy</span>
+                    </div>
+                    <p class="footer-tagline">Pakistan's First Digital Rooftop Solar Leasing Marketplace</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooftop-owner.html">List Your Rooftop</a></li>
+                        <li><a href="epc-dashboard.html">EPC Partners</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>info@skyshare.energy</li>
+                        <li>+92 (21) 1234-5678</li>
+                        <li>Karachi, Pakistan</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SkyShare Energy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
